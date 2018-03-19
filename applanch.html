@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
+</style>
+<body class="w3-content w3-black" style="max-width:1500px;">
+
+<!-- Header with Slideshow -->
+<header class="w3-display-container w3-center">
+<div id="pxEmbedContainer"></div>
+<script data-rocketsrc="//cdn.pressly.com/embeds/grid-widget/px-widget.js" type="text/rocketscript"></script>
+<script type="text/rocketscript">
+  new PresslyEmbed({ 
+    hubId: 14008,
+    sortOrder: 'created_at DESC',
+    skin: 'default',
+    filterOnType: undefined,
+    blocksPerPage: 100,
+    pageMode: 'append',
+    type: 'default',
+    hideCollectionsLabel: false,
+    showCollectionsNav: false,
+    enableSocialShare: false,
+    showTags: false,
+    showByline: true,
+    showContext: true,
+    showCollaboratorHeader: false,
+    inlineSpotlight: false,
+    filterOnTag: undefined,
+    maxItems: undefined,
+    limit: undefined,
+    token: undefined,
+    accentColor: '#666acd',
+    bgColor: '#eee',
+ });
+</script>
+</header>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
