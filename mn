@@ -1,0 +1,27 @@
+<div id="pxEmbedContainer"></div>
+<script src="//cdn.pressly.com/embeds/grid-widget/px-widget.js"></script>
+<script type="text/javascript">
+  new PresslyEmbed({ 
+    hubId: 14008,
+    sortOrder: 'created_at DESC',
+    skin: 'default',
+    filterOnType: undefined,
+    blocksPerPage: 3,
+    pageMode: 'append',
+    type: 'default',
+    hideCollectionsLabel: false,
+    showCollectionsNav: false,
+    enableSocialShare: true,
+    showTags: true,
+    showByline: true,
+    showContext: true,
+    showCollaboratorHeader: false,
+    inlineSpotlight: true,
+    filterOnTag: undefined,
+    maxItems: undefined,
+    limit: undefined,
+    token: undefined,
+    accentColor: '#666acd',
+    bgColor: '#eee',
+ });
+</script>
